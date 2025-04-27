@@ -69,6 +69,115 @@ try {
     <title>Assign Questionnaires</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #337ab7;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-right: 15px;
+        }
+
+        p a:hover {
+            color: #0056b3;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .section h3 {
+            margin-top: 0;
+            color: #555;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-list {
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 3px;
+            background-color: #fff;
+        }
+
+        .checkbox-list label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .checkbox-list label input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Blue for assign */
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            background-color: #fdecea;
+            color: #d9534f;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #d9534f;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+        }
+
+        .no-data {
+            color: #777;
+            font-style: italic;
+        }
+    </style>
+    <style>
         .section {
             margin-bottom: 20px;
             padding: 15px;

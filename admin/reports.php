@@ -36,6 +36,105 @@ try {
 <head>
     <title>View Reports</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #337ab7;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-right: 15px;
+        }
+
+        p a:hover {
+            color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        thead {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #eee;
+        }
+
+        th {
+            padding: 12px;
+            text-align: left;
+            color: #555;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        td a {
+            color: #28a745; /* Green for view responses */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border: 1px solid #28a745;
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+
+        td a:hover {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .error {
+            background-color: #fdecea;
+            color: #d9534f;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #d9534f;
+        }
+
+        .no-data {
+            color: #777;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <div class="container">

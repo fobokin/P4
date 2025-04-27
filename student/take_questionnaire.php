@@ -111,6 +111,118 @@ try {
     <title>Take Questionnaire</title>
 
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #337ab7;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-top: 20px;
+            display: block;
+        }
+
+        p a:hover {
+            color: #0056b3;
+        }
+
+        .error {
+            background-color: #fdecea;
+            color: #d9534f;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #d9534f;
+        }
+
+        .question {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .question h3 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .question textarea {
+            width: calc(100% - 12px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .question input[type="radio"],
+        .question input[type="checkbox"] {
+            margin-right: 8px;
+            margin-top: 8px;
+        }
+
+        .question label {
+            display: inline-block;
+            margin-right: 15px;
+            color: #555;
+        }
+
+        .question div {
+            margin-bottom: 8px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Blue for submit */
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 150px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .no-questions {
+            color: #777;
+            font-style: italic;
+        }
+    </style>
 
 </head>
 

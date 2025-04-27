@@ -52,6 +52,147 @@ try {
     <title>Edit Questionnaire</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #337ab7;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-right: 15px;
+        }
+
+        p a:hover {
+            color: #0056b3;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #777;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        thead {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #eee;
+        }
+
+        th {
+            padding: 12px;
+            text-align: left;
+            color: #555;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        td.order-number {
+            width: 5%;
+            text-align: center;
+        }
+
+        td.actions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        td.actions a:hover {
+            color: #d9534f; /* Example: red for delete */
+        }
+
+        td.reorder-controls {
+            width: 10%;
+            text-align: center;
+        }
+
+        .reorder-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reorder-button {
+            cursor: pointer;
+            margin: 5px 0;
+            font-size: 1.2em;
+            border: none;
+            background: none;
+            padding: 5px;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .reorder-button:hover {
+            color: #007bff;
+        }
+
+        .error {
+            background-color: #fdecea;
+            color: #d9534f;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #d9534f;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+        }
+
+        #questions-table-body tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+    </style>
+    <style>
         .reorder-controls {
             display: flex;
             flex-direction: column;
